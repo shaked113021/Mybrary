@@ -9,6 +9,7 @@ const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 
 const indexRouter = require('./routes/index');
+const authorsRouter = require('./routes/authors');s
 
 const port = process.env.PORT || 5000;
 
@@ -27,5 +28,6 @@ db.on('error', (err) => console.error(err));
 db.once('open', () => console.log('Connected to DB'));
 
 app.use('/', indexRouter);
+app.use('/authors', authorsRouter);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
