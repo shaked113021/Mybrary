@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 
 const indexRouter = require('./routes/index');
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 app.set('view engine', 'ejs');
 app.set('views', `${__dirname}/views`);
