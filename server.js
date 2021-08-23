@@ -9,7 +9,7 @@ const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 
 const indexRouter = require('./routes/index');
-const authorsRouter = require('./routes/authors');s
+const authorsRouter = require('./routes/authors');
 
 const port = process.env.PORT || 5000;
 
