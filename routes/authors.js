@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
   } else {
     res.render('authors/index', { 
       authors: authors,
-      searchOptions: searchOptions
+      searchOptions: req.query
     });
   }
 
